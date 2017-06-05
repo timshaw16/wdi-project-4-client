@@ -1,17 +1,17 @@
 angular
-  .module('wdi-project-4-client')
-  .controller('RegisterCtrl', RegisterCtrl);
+.module('wdi-project-4-client')
+.controller('RegisterCtrl', RegisterCtrl);
 
-RegisterCtrl.$inject = ['User'];
-function RegisterCtrl(User) {
-  const vm    = this;
+RegisterCtrl.$inject = ['User', 'CurrentUserService', '$state'];
+function RegisterCtrl(User, CurrentUserService, $state){
+  const vm = this;
 
-  vm.register =  () => {
+  vm.register = () => {
     User
-    .register(vm.user)
-    .$promise
-    .then(data => {
-      console.log(data);
+    .register(vm.user).$promise
+    .then(() => {
+      CurrentUserService.getUser();
+      $state.go('usersIndex');
     }, err => {
       console.log(err);
     });
