@@ -1,52 +1,96 @@
 .indexSeasonImg {
   width: 100%;
-  border: 2px solid #ff3fd2
+  border: 2px solid #ff3fd2;
+  display: block;
 }
 
-.seasonPara {
-  background-color: rgba(255,63,210,.9);
-  color: white;
+.containerSeasonImg {
   position: relative;
-  font-size: 50px;
-  margin-top: -72px;
-  padding-left: 5px;
 }
 
-// .container {
-//   position: relative;
-//   width: 100%;
-// }
-//
-// .image {
-//   display: block;
-//   width: 100%;
-//   height: auto;
-// }
-//
-// .overlay {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   background-color: #008CBA;
-//   overflow: hidden;
-//   width: 100%;
-//   height: 0;
-//   transition: .5s ease;
-// }
-//
-// .container:hover .overlay {
-//   height: 100%;
+.overlay {
+    position: absolute;
+    bottom: 0px;
+    /* left: 0; */
+    /* right: 0; */
+    background-color: rgba(255, 63, 210, 0.9);
+    overflow: hidden;
+    width: 1139px;
+    height: 90px;
+    transition: .5s ease;
 }
-//
-// .text {
+
+.containerSeasonImg:hover .overlay {
+  height: 100%;
+}
+
+.overlayIndexText {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  text-align: right;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+// .overlayIndexPara {
 //   white-space: nowrap;
 //   color: white;
 //   font-size: 20px;
 //   position: absolute;
 //   overflow: hidden;
-//   top: 50%;
+//   text-align: right;
+//   top: 15%;
 //   left: 50%;
 //   transform: translate(-50%, -50%);
 //   -ms-transform: translate(-50%, -50%);
 // }
+
+.indexQueenImg {
+  border: 2px solid #ff3fd2;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.containerQueenImg {
+  position: relative;
+  width: 50%;
+}
+
+.queenIndexOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 63, 210, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 90px;
+  transition: .3s ease;
+}
+
+.queenIndexOverlayText {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  text-align: right;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.containerQueenImg:hover .queenIndexOverlay {
+  height: 98%;
+}
+
+a {
+  color: white !important;
+  text-decoration: none !important;
+}

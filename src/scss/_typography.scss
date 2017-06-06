@@ -10,7 +10,7 @@
 }
 
 @font-face {
-	font-family: 'Aviddyn';
+	font-family: 'Aviddyn-Bold';
 	src: url('/fonts/Aviddyn-Bold.eot');
 	src: url('/fonts/Aviddyn-Bold.eot?#iefix') format('embedded-opentype'),
 		url('/fonts/Aviddyn-Bold.woff') format('woff'),
@@ -21,5 +21,5 @@
 }
 
 h1 {
-  font-weight: 'Aviddyn';
+  font-family: 'Aviddyn';
 }

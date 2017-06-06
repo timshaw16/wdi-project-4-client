@@ -1,0 +1,62 @@
+input[type=search] {
+ -webkit-appearance: textfield;
+ -webkit-box-sizing: content-box;
+ font-family: 'RunchFont';
+ font-size: 100%;
+
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+ display: none;
+}
+
+input[type=search] {
+ background: rgba(255, 63, 210, 0.9) url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+ border: solid 1px #ff3fd2;
+ padding: 9px 10px 9px 32px;
+ width: 55px;
+ font-family: 'Aviddyn';
+
+
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ border-radius: 20px;
+
+ -webkit-transition: all .5s;
+ -moz-transition: all .5s;
+ transition: all .5s;
+}
+input[type=search]:focus {
+ width: 70px;
+ background-color: #fff;
+ border-color: #ff3fd2;
+
+}
+
+// size of the search Bar before
+#searchBar input[type=search] {
+  width: 17px;
+  padding-left: 10px;
+  color: transparent;
+}
+#searchBar input[type=search]:hover {
+	background-color: #fff;
+}
+#searchBar input[type=search]:hover {
+	width: 1000px;
+	padding-left: 32px;
+	color: #ff3fd2;
+	background-color: #fff;
+	cursor: auto;
+  margin-top: -70px;
+}
+#searchBar input:-moz-placeholder {
+	color: transparent;
+}
+#searchBar input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+#searchBar {
+  margin-top: -45px;
+}
