@@ -1,14 +1,10 @@
-<h1>seasons</h1>
+<!-- <h1>seasons</h1> -->
 <ul>
   <li ng-repeat="season in seasonsIndex.seasons track by $index">
     <ul>
-      <li>{{ season.title}}</li>
-      <li>{{ season.description}}</li>
-      <li><img src="{{season.image}}"> </li>
+      <!-- <li>{{ season.title}}</li>
+      <li>{{ season.description}}</li> -->
+      <li><img class="seasonImg" ng-src="{{season.image}}"></li>
     </ul>
   </li>
 </ul>
-
-<img class="group-image" src="{{ group.image }}">
-
-{{ season.image}}
