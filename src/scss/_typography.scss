@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'Aviddyn';
+	src: url('/fonts/AviddynRegular.eot');
+	src: url('/fonts/AviddynRegular.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/AviddynRegular.woff') format('woff'),
+		url('/fonts/AviddynRegular.ttf') format('truetype'),
+		url('/fonts/AviddynRegular.svg#AviddynRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Aviddyn';
+	src: url('/fonts/Aviddyn-Bold.eot');
+	src: url('/fonts/Aviddyn-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/Aviddyn-Bold.woff') format('woff'),
+		url('/fonts/Aviddyn-Bold.ttf') format('truetype'),
+		url('/fonts/Aviddyn-Bold.svg#Aviddyn-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+h1 {
+  font-weight: 'Aviddyn';
+}

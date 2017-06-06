@@ -1,23 +1,7 @@
-// ************* Queens Index Page ***************
-
-.queenIndexImg {
-  border: 2px solid #FF3FD2;
-  border-radius: 275px;
-  width: 300px;
-  float: left;
-  margin-right: 5px;
-  margin-bottom: 5px;
-}
-
-li {
-  list-style: none;
-}
-
-// ************* Seasons Index Page ******************
-
-.seasonImg {
-  width: 100%;
-  border: 2px solid #FF3FD2;
-  border-radius: 115px;
-  margin-bottom: 50px;
-}
+@import 'drag_race_index';
+@import 'queens_index';
+@import 'seasons_index';
+@import 'breadcrumb';
+@import 'footer';
+@import 'typography';
+@import 'nav';
