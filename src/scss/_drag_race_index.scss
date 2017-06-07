@@ -2,30 +2,30 @@
   width: 100%;
   border: 2px solid #ff3fd2;
   display: block;
-  // border-radius: 106px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 60px;
 }
 
 .containerSeasonImg {
   position: relative;
-  // border-radius: 106px;
+  padding-left: 2px;
+  padding-right: 20px;
 }
 
 .overlay {
-    position: absolute;
-    bottom: 0px;
-    /* left: 0; */
-    /* right: 0; */
-    background-color: rgba(255, 63, 210, 0.9);
-    overflow: hidden;
-    width: 100%;
-    height: 90px;
-    // border-radius: 106px;
-    transition: .5s ease;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(255, 63, 210, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 90px;
+  transition: .5s ease;
+  border-radius: 60px;
 }
 
 .containerSeasonImg:hover .overlay {
   height: 100%;
-  // border-radius: 106px;
 }
 
 .overlayIndexText {
@@ -35,7 +35,6 @@
   position: absolute;
   overflow: hidden;
   text-align: right;
-  // border-radius: 106px;
   top: 40%;
   left: 23%;
   transform: translate(-50%, -50%);
@@ -46,6 +45,7 @@
   border: 2px solid #ff3fd2;
   margin-top: 10px;
   max-width: 100%;
+  border-radius: 60px;
 }
 
 .containerQueenImg {
@@ -86,9 +86,18 @@ a {
   color: white !important;
   text-decoration: none !important;
 }
-
-// Grid
-.indexSeasonImgcontainer {
-  width: 120%;
-  margin-left: -90px;
+.grades {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.desktopGrades {
+  box-sizing: border-box;
+  padding: 10px;
+  float: left;
+  width: 50%;
+  height: 50%;
+}
+.desktopGrades h1 {
+  border: 1px solid #ccc;
 }
