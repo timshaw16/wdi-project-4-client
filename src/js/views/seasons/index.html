@@ -7,9 +7,8 @@
 <ul>
   <li ng-repeat="season in seasonsIndex.seasons track by $index">
     <ul>
-      <!-- <li>{{ season.title}}</li>
-      <li>{{ season.description}}</li> -->
       <li><img class="seasonImg" ng-src="{{season.image}}"></li>
+      <li><h1 class="seasonTitle">{{ season.title }}</h1></li>
     </ul>
   </li>
 </ul>

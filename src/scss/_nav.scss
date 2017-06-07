@@ -3,7 +3,7 @@
 }
 
 .navRupaul {
-    width: 45%;
+    width: 49%;
     float: right;
     margin-top: -414px;
     position: relative;
@@ -21,4 +21,29 @@
     float: left;
     position: relative;
     margin-top: -399px;
+}
+
+.menuNav {
+  color: white;
+  padding: 15px;
+}
+
+.regLog {
+  background-color: #FF3FD2;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  margin-right: -94px;
+  padding: 11px;
+  margin-top: -22px;
+  border: 1px solid white;
+  font-family: 'Aviddyn';
+  }
+
+.Reg {
+  padding-right: 20px;
+}
+
+.login {
+  padding-right: 10px;
 }

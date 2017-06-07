@@ -35,6 +35,13 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     controller: 'SeasonsIndexCtrl',
     controllerAs: 'seasonsIndex'
   })
+  .state('seasonsShow', {
+    url: '/seasons/show',
+    templateUrl: '/js/views/seasons/show.html',
+    controller: 'SeasonsShowCtrl',
+    controllerAs: 'seasonsShow'
+  })
+
   .state('queensIndex', {
     url: '/queens',
     templateUrl: '/js/views/queens/index.html',
