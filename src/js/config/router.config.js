@@ -36,17 +36,22 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     controllerAs: 'seasonsIndex'
   })
   .state('seasonsShow', {
-    url: '/seasons/show',
+    url: '/seasons/:id',
     templateUrl: '/js/views/seasons/show.html',
     controller: 'SeasonsShowCtrl',
     controllerAs: 'seasonsShow'
   })
-
   .state('queensIndex', {
     url: '/queens',
     templateUrl: '/js/views/queens/index.html',
     controller: 'QueensIndexCtrl',
     controllerAs: 'queensIndex'
+  })
+  .state('queensShow', {
+    url: '/queens/:id',
+    templateUrl: '/js/views/queens/show.html',
+    controller: 'QueensShowCtrl',
+    controllerAs: 'queensShow'
   });
 
   $urlRouterProvider.otherwise('/');

@@ -1,0 +1,16 @@
+<nav class="breadcrumb">
+  <a class="breadcrumb-item" href="home">Home /</a>
+  <a class="breadcrumb-item" href="seasons">Seasons /</a>
+  <a class="breadcrumb-item" href="seasons">{{ seasonsShow.season.title }}</a>
+</nav>
+
+<h1>{{ seasonsShow.season.title }}</h1>
+
+<ul>
+  <li><a ui-sref="seasonsShow({ id: season.id })"><img class="seasonImg" ng-src="{{season.image}}"></a></li>
+  <h2>Queens</h2>
+  <li ng-repeat="queen in seasonsShow.season.queens track by $index">
+    <img class="queenShowImg" ng-src="{{queen.image}}"<a ui-sref="queensShow({ id: queen.id })"></a>
+
+  </li>
+</ul>

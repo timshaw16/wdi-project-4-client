@@ -14,11 +14,15 @@ function QueensIndexCtrl(Queen){
     vm.queens = queens;
   });
 
+  
+
+  // function = openNewWindow() {
+  //
+  // }
+
   // vm.sortQueens = (queens) =>{
   //   return queens.map((a,b) => {
   //     return a.drag_name > b.drag_name
   //   });
   // };
-
-
 }
