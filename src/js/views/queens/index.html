@@ -4,8 +4,9 @@
   <a class="breadcrumb-item" href="seasons">Queens</a>
 </nav>
 <li ng-repeat="queen in queensIndex.queens track by $index">
-  <ul>
-    <li><img class="queenIndexImg" ng-src="{{queen.image}}"></li>
-  </ul>
+  <div class="queensIndexList">
+    <ul>
+      <li><img class="queenIndexImg" ng-src="{{queen.image}}"></li>
+    </ul>
+  </div>
 </li>
-</ul>

@@ -1,3 +1,23 @@
-{{ queensShow.queen.drag_name }}
+<!-- <nav class="breadcrumb">
+  <a class="breadcrumb-item" href="home">Home /</a>
+  <a class="breadcrumb-item" href="seasons">Seasons /</a>
+  <a class="breadcrumb-item" href="#">{{ seasonsShow.season.title }}</a>
+</nav> -->
 
-<img class="queenIndexImg" ng-src="{{queensShow.queen.image}}">
+<div class="queenShowIndex">
+<img class="queenShowIndexImg" ng-src="{{queensShow.queen.image}}">
+</div>
+
+<div class="queenShowIndexInfo">
+  <ul>
+    <li><h4 class="queensShowIndexInfo">Drag Name:</h4>{{queensShow.queen.drag_name}}</li>
+    <li><h4 class="queensShowIndexInfo">Also Know As:</h4>{{queensShow.queen.first_name }} {{queensShow.queen.last_name}}</li>
+    <li><h4 class="queensShowIndexInfo">Website:</h4>{{queensShow.queen.website}}</li>
+    <li><h4 class="queensShowIndexInfo">Instagram:</h4>{{queensShow.queen.instagram}}</li>
+    <li><h4 class="queensShowIndexInfo">Twitter:</h4>{{queensShow.queen.twitter}}</li>
+    <br>
+  </ul>
+</div>
+<div class="queenShowIndexBio">
+<li><h4 class="queensShowIndexBio">Bio:</h4>{{queensShow.queen.bio}}
+</div>
