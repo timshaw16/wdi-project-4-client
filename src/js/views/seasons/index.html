@@ -2,13 +2,13 @@
 
 <nav class="breadcrumb">
   <a class="breadcrumb-item" href="home">Home /</a>
-  <a class="breadcrumb-item" href="seasons">Season</a>
+  <a class="breadcrumb-item" href="seasons">Seasons</a>
 </nav>
 <ul>
   <li ng-repeat="season in seasonsIndex.seasons track by $index">
     <ul>
-      <li><a ui-sref="seasonsShow({ id: season.id })"><img class="seasonImg" ng-src="{{season.image}}"></a></li>
-      <li><h1 class="seasonTitle">{{ season.title }}</h1></li>
+      <li><a ui-sref="seasonsShow({ id: season.id })"><img class="seasonImg" ng-src="{{season.image}}"></a><h1 class="seasonTitle">{{ season.title }}</h1></li>
+      <li></li>
     </ul>
   </li>
 </ul>

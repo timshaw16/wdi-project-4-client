@@ -8,9 +8,10 @@
 
 <ul>
   <li><p>{{ seasonsShow.season.description}}</p></li>
-  <h2>Queens</h2>
-  <li ng-repeat="queen in seasonsShow.season.queens track by $index">
-    <img class="queenShowImg" ng-src="{{queen.image}}"<a ui-sref="queensShow({ id: queen.id })"></a>
-
-  </li>
+  <h2 class="seasonShowQueenTitle">Queens</h2>
+  <div class="seasonShowQueens">
+    <li ng-repeat="queen in seasonsShow.season.queens track by $index">
+      <img class="queenShowImg" ng-src="{{queen.image}}"<a ui-sref="queensShow({ id: queen.id })"></a>
+    </li>
+  </div>
 </ul>
