@@ -1,173 +1,229 @@
-.indexSeasonImg {
-  margin-left: -146px;
-  margin-top: -54px;
-  width: 1428px;
-  height: 510px;
-  border: 2px solid #ff3fd2;
-  // width: 100%;
-  // display: block;
-  // margin-right: 10px;
-  // margin-left: 10px;
-  // border-radius: 60px;
+@mixin backgrounds(){
+  background-attachment:fixed;
+  background-size:cover!important;
+  background-position:center;
+  background-blend-mode:screen;
+}
+html, body{ margin:0; height:100%; }
+section{
+  position:relative;
+  height:100%;
+  @include backgrounds();
+
+  h1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:50px;
+    color:#fff;
+    width:100%;
+    text-align:center;
+  }
+  &:nth-of-type(1){
+    .paralax-1{
+      height:100%;
+      width:100%;
+      position:relative;
+      overflow:hidden;
+      .new-paralax{
+        z-index:-100000;
+        transform:translateZ(-8000px) scale(.4);
+        @include backgrounds();
+        height:100%;
+        width:100%;
+        position:relative;
+        transform:scale(1.3);
+        background-color: #f55;
+        background-image:url('https://vignette3.wikia.nocookie.net/logosrupaulsdragrace/images/d/d7/S6cast.jpg/revision/latest/scale-to-width-down/690?cb=20161204073715');
+      } /* .new-paralax */
+    } /* .paralax-1 */
+  } /* &:nth-of-type(1) */
+
+  &:nth-of-type(2){
+    background-image:url('http://www.newnownext.com/wp-content/uploads/2013/12/RPDRS6_QueensGroupComp-onGRDNT_608x310px.jpg');
+  }
+  &:nth-of-type(3){
+    background-image:url('http://68.media.tumblr.com/469848bf945c79dbbc941281a29a575a/tumblr_my8p2qvbbi1sqwuruo1_500.jpg');
+    background-color:red;
+
+  }
+  &:nth-of-type(4){
+    background-image:url('https://s-media-cache-ak0.pinimg.com/originals/fa/7a/10/fa7a10a180066c9b79ee4de641e64277.jpg');
+  }
 }
 
-.containerSeasonImg {
-  position: relative;
-  padding-left: 2px;
-  padding-right: 20px;
-}
 
-// .overlay {
-//   position: absolute;
-//   bottom: 0px;
-//   background-color: rgba(255, 63, 210, 0.9);
-//   overflow: hidden;
-//   width: 98%;
-//   height: 90px;
-//   transition: .5s ease;
+// .indexSeasonImg {
+//   margin-left: -146px;
+//   margin-top: -54px;
+//   width: 1428px;
+//   height: 510px;
+//   border: 2px solid #ff3fd2;
+//   // width: 100%;
+//   // display: block;
+//   // margin-right: 10px;
+//   // margin-left: 10px;
 //   // border-radius: 60px;
 // }
-
-.containerSeasonImg:hover .overlay {
-  height: 100%;
-}
-
-.seasonsIndexTitle {
-  background-color: rgba(255, 63, 210, 0.9);
-  padding: 10px;
-  margin-top: -90px;
-  position: relative;
-  width: 1283px;
-}
-.overlayIndexText {
-  // white-space: nowrap;
-  // color: white;
-  // font-size: 20px;
-  // position: absolute;
-  // overflow: hidden;
-  // text-align: right;
-  // top: 40%;
-  // left: 23%;
-  // transform: translate(-50%, -50%);
-  // -ms-transform: translate(-50%, -50%);
-}
-
-// ********* Search The Queens ***********
-
-.queensIndexTitle {
-  background-color: rgba(255, 63, 210, 0.9);
-  padding: 10px;
-  margin-top: -91px;
-  position: relative;
-  margin-right: -140px;
-}
-
-.searchTheQueens {
-  margin-top: -69px;
-  background-color: #ff3fd2;
-  position: relative;
-  color: white;
-  border: 0px !important;
-  padding: 14px;
-  margin-bottom: 0px;
-}
-.indexQueenImg {
-  border: 2px solid #ff3fd2;
-  margin-top: 10px;
-  width: 1428px;
-  margin-left: -146px;
-  height: 510px;
-  border: 2px solid #ff3fd2;
-  // margin-top: 10px;
-  // max-width: 100%;
-  // border-radius: 60px;
-}
-
-.containerQueenImg .desktopGrades .desktopGrades1 {
-  position: relative;
-  width: 50%;
-}
-
-// .queenIndexOverlay {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   background-color: rgba(255, 63, 210, 0.9);
-//   overflow: hidden;
-//   width: 100%;
-//   height: 90px;
-//   transition: .3s ease;
+//
+// .containerSeasonImg {
+//   position: relative;
+//   padding-left: 2px;
+//   padding-right: 20px;
 // }
 //
-// .queenIndexOverlayText {
-//   white-space: nowrap;
-//   color: white;
-//   font-size: 20px;
-//   position: absolute;
-//   overflow: hidden;
-//   text-align: right;
-//   top: 40%;
-//   left: 30%;
-//   transform: translate(-50%, -50%);
-//   -ms-transform: translate(-50%, -50%);
+// // .overlay {
+// //   position: absolute;
+// //   bottom: 0px;
+// //   background-color: rgba(255, 63, 210, 0.9);
+// //   overflow: hidden;
+// //   width: 98%;
+// //   height: 90px;
+// //   transition: .5s ease;
+// //   // border-radius: 60px;
+// // }
+//
+// .containerSeasonImg:hover .overlay {
+//   height: 100%;
 // }
-
-.containerQueenImg:hover .queenIndexOverlay {
-  height: 98%;
-}
-
-a {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-// ********** Flex Grid ************
-.grades {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.desktopGrades {
-  box-sizing: border-box;
-  padding: 10px;
-  float: left;
-  width: 50%;
-  height: 50%;
-}
-.desktopGrades h1 {
-  border: 1px solid #ccc;
-}
-
-
-//  ********** Title *****
-
-.dragQuotes {
-  margin-top: -69px;
-  background-color: #ff3fd2;
-  position: relative;
-  color: white;
-  border: 0px !important;
-  padding: 14px;
-  margin-bottom: 0px;
-}
-
-.dragVids {
-  margin-top: -69px;
-  background-color: #ff3fd2;
-  position: relative;
-  color: white;
-  border: 0px !important;
-  padding: 14px;
-  margin-bottom: 0px;
-}
-
-.dragGiphy {
-  margin-top: -69px;
-  background-color: #ff3fd2;
-  position: relative;
-  color: white;
-  border: 0px !important;
-  padding: 14px;
-  margin-bottom: 0px;
-}
+//
+// .seasonsIndexTitle {
+//   background-color: rgba(255, 63, 210, 0.9);
+//   padding: 10px;
+//   margin-top: -90px;
+//   position: relative;
+//   width: 1283px;
+// }
+// .overlayIndexText {
+//   // white-space: nowrap;
+//   // color: white;
+//   // font-size: 20px;
+//   // position: absolute;
+//   // overflow: hidden;
+//   // text-align: right;
+//   // top: 40%;
+//   // left: 23%;
+//   // transform: translate(-50%, -50%);
+//   // -ms-transform: translate(-50%, -50%);
+// }
+//
+// // ********* Search The Queens ***********
+//
+// .queensIndexTitle {
+//   background-color: rgba(255, 63, 210, 0.9);
+//   padding: 10px;
+//   margin-top: -91px;
+//   position: relative;
+//   margin-right: -140px;
+// }
+//
+// .searchTheQueens {
+//   margin-top: -69px;
+//   background-color: #ff3fd2;
+//   position: relative;
+//   color: white;
+//   border: 0px !important;
+//   padding: 14px;
+//   margin-bottom: 0px;
+// }
+// .indexQueenImg {
+//   border: 2px solid #ff3fd2;
+//   margin-top: 10px;
+//   width: 1428px;
+//   margin-left: -146px;
+//   height: 510px;
+//   border: 2px solid #ff3fd2;
+//   // margin-top: 10px;
+//   // max-width: 100%;
+//   // border-radius: 60px;
+// }
+//
+// .containerQueenImg .desktopGrades .desktopGrades1 {
+//   position: relative;
+//   width: 50%;
+// }
+//
+// // .queenIndexOverlay {
+// //   position: absolute;
+// //   bottom: 0;
+// //   left: 0;
+// //   right: 0;
+// //   background-color: rgba(255, 63, 210, 0.9);
+// //   overflow: hidden;
+// //   width: 100%;
+// //   height: 90px;
+// //   transition: .3s ease;
+// // }
+// //
+// // .queenIndexOverlayText {
+// //   white-space: nowrap;
+// //   color: white;
+// //   font-size: 20px;
+// //   position: absolute;
+// //   overflow: hidden;
+// //   text-align: right;
+// //   top: 40%;
+// //   left: 30%;
+// //   transform: translate(-50%, -50%);
+// //   -ms-transform: translate(-50%, -50%);
+// // }
+//
+// .containerQueenImg:hover .queenIndexOverlay {
+//   height: 98%;
+// }
+//
+// a {
+//   color: white !important;
+//   text-decoration: none !important;
+// }
+//
+// // ********** Flex Grid ************
+// .grades {
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+// }
+// .desktopGrades {
+//   box-sizing: border-box;
+//   padding: 10px;
+//   float: left;
+//   width: 50%;
+//   height: 50%;
+// }
+// .desktopGrades h1 {
+//   border: 1px solid #ccc;
+// }
+//
+//
+// //  ********** Title *****
+//
+// .dragQuotes {
+//   margin-top: -69px;
+//   background-color: #ff3fd2;
+//   position: relative;
+//   color: white;
+//   border: 0px !important;
+//   padding: 14px;
+//   margin-bottom: 0px;
+// }
+//
+// .dragVids {
+//   margin-top: -69px;
+//   background-color: #ff3fd2;
+//   position: relative;
+//   color: white;
+//   border: 0px !important;
+//   padding: 14px;
+//   margin-bottom: 0px;
+// }
+//
+// .dragGiphy {
+//   margin-top: -69px;
+//   background-color: #ff3fd2;
+//   position: relative;
+//   color: white;
+//   border: 0px !important;
+//   padding: 14px;
+//   margin-bottom: 0px;
+// }

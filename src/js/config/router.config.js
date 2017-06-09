@@ -64,9 +64,17 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
   .state('videosIndex', {
     url: '/videos',
     templateUrl: '/js/views/videos/index.html',
-    controller: 'videosIndexCtrl',
+    controller: 'VideosIndexCtrl',
     controllerAs: 'videosIndex'
+  })
+
+  .state('quotesIndex', {
+    url: '/quotes',
+    templateUrl: '/js/views/quotes/index.html',
+    controller: 'quotesIndexCtrl',
+    controllerAs: 'QuotesIndex'
   });
+
 
 
 
