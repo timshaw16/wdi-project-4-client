@@ -1,0 +1,17 @@
+<nav class="breadcrumb">
+  <a class="breadcrumb-item" href="home">Home /</a>
+  <a class="breadcrumb-item" href="giphy">Drag Giphys</a>
+</nav>
+
+
+<!-- <h1>Drag Race Giphys</h1> -->
+
+<div class="giphyContainer">
+<ul>
+  <li ng-repeat="gify in giphyIndex.gifs track by $index">
+    <ul>
+      <li><img class="giphyImg" ng-src="{{ gify.images.fixed_height.url }}"></li>
+    </ul>
+  </li>
+</ul>
+</div>

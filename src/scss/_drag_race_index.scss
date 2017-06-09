@@ -1,8 +1,12 @@
 .indexSeasonImg {
-  width: 100%;
+  margin-left: -146px;
+  margin-top: -54px;
+  width: 1428px;
+  height: 510px;
   border: 2px solid #ff3fd2;
-  display: block;
-  margin-right: 10px;
+  // width: 100%;
+  // display: block;
+  // margin-right: 10px;
   // margin-left: 10px;
   // border-radius: 60px;
 }
@@ -13,34 +17,50 @@
   padding-right: 20px;
 }
 
-.overlay {
-  position: absolute;
-  bottom: 0px;
-  background-color: rgba(255, 63, 210, 0.9);
-  overflow: hidden;
-  width: 98%;
-  height: 90px;
-  transition: .5s ease;
-  // border-radius: 60px;
-}
+// .overlay {
+//   position: absolute;
+//   bottom: 0px;
+//   background-color: rgba(255, 63, 210, 0.9);
+//   overflow: hidden;
+//   width: 98%;
+//   height: 90px;
+//   transition: .5s ease;
+//   // border-radius: 60px;
+// }
 
 .containerSeasonImg:hover .overlay {
   height: 100%;
 }
 
-.overlayIndexText {
-  white-space: nowrap;
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  text-align: right;
-  top: 40%;
-  left: 23%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+.seasonsIndexTitle {
+  background-color: rgba(255, 63, 210, 0.9);
+  padding: 10px;
+  margin-top: -90px;
+  position: relative;
+  width: 1283px;
 }
+.overlayIndexText {
+  // white-space: nowrap;
+  // color: white;
+  // font-size: 20px;
+  // position: absolute;
+  // overflow: hidden;
+  // text-align: right;
+  // top: 40%;
+  // left: 23%;
+  // transform: translate(-50%, -50%);
+  // -ms-transform: translate(-50%, -50%);
+}
+
 // ********* Search The Queens ***********
+
+.queensIndexTitle {
+  background-color: rgba(255, 63, 210, 0.9);
+  padding: 10px;
+  margin-top: -91px;
+  position: relative;
+  margin-right: -140px;
+}
 
 .searchTheQueens {
   margin-top: -69px;
@@ -54,7 +74,12 @@
 .indexQueenImg {
   border: 2px solid #ff3fd2;
   margin-top: 10px;
-  max-width: 100%;
+  width: 1428px;
+  margin-left: -146px;
+  height: 510px;
+  border: 2px solid #ff3fd2;
+  // margin-top: 10px;
+  // max-width: 100%;
   // border-radius: 60px;
 }
 
@@ -63,30 +88,30 @@
   width: 50%;
 }
 
-.queenIndexOverlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 63, 210, 0.9);
-  overflow: hidden;
-  width: 100%;
-  height: 90px;
-  transition: .3s ease;
-}
-
-.queenIndexOverlayText {
-  white-space: nowrap;
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  text-align: right;
-  top: 40%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
+// .queenIndexOverlay {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   background-color: rgba(255, 63, 210, 0.9);
+//   overflow: hidden;
+//   width: 100%;
+//   height: 90px;
+//   transition: .3s ease;
+// }
+//
+// .queenIndexOverlayText {
+//   white-space: nowrap;
+//   color: white;
+//   font-size: 20px;
+//   position: absolute;
+//   overflow: hidden;
+//   text-align: right;
+//   top: 40%;
+//   left: 30%;
+//   transform: translate(-50%, -50%);
+//   -ms-transform: translate(-50%, -50%);
+// }
 
 .containerQueenImg:hover .queenIndexOverlay {
   height: 98%;
@@ -96,6 +121,8 @@ a {
   color: white !important;
   text-decoration: none !important;
 }
+
+// ********** Flex Grid ************
 .grades {
   width: 100%;
   height: 100%;

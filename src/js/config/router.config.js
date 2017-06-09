@@ -52,14 +52,23 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     templateUrl: '/js/views/queens/show.html',
     controller: 'QueensShowCtrl',
     controllerAs: 'queensShow'
+  })
+
+  .state('giphyIndex', {
+    url: '/giphy',
+    templateUrl: '/js/views/giphy/index.html',
+    controller: 'GiphyIndexCtrl',
+    controllerAs: 'giphyIndex'
+  })
+
+  .state('videosIndex', {
+    url: '/videos',
+    templateUrl: '/js/views/videos/index.html',
+    controller: 'videosIndexCtrl',
+    controllerAs: 'videosIndex'
   });
 
-  // .state('giphyIndex', {
-  //   url: '/giphy',
-  //   templateUrl: '/js/views/giphy/index.html',
-  //   controller: 'GiphyIndexCtrl',
-  //   controllerAs: 'giphyIndex'
-  // });
+
 
   $urlRouterProvider.otherwise('/');
 }

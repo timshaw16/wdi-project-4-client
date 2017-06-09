@@ -1,8 +1,8 @@
-<!-- <nav class="breadcrumb">
+<nav class="breadcrumb">
   <a class="breadcrumb-item" href="home">Home /</a>
   <a class="breadcrumb-item" href="seasons">Seasons /</a>
-  <a class="breadcrumb-item" href="#">{{ seasonsShow.season.title }}</a>
-</nav> -->
+  <a class="breadcrumb-item" href="#">{{ queensShow.season.title }}</a>
+</nav>
 
 <div class="queenShowIndex">
 <img class="queenShowIndexImg" ng-src="{{queensShow.queen.image}}">
@@ -10,27 +10,33 @@
 
 <div class="queenShowIndexInfo">
   <ul>
-    <li><h4 class="queensShowIndexInfo">Drag Name:</h4>{{queensShow.queen.drag_name}}</li>
-    <li><h4 class="queensShowIndexInfo">Also Know As:</h4>{{queensShow.queen.first_name }} {{queensShow.queen.last_name}}</li>
-    <li><h4 class="queensShowIndexInfo">Website:</h4>{{queensShow.queen.website}}</li>
-    <li><h4 class="queensShowIndexInfo">Instagram:</h4>{{queensShow.queen.instagram}}</li>
-    <li><h4 class="queensShowIndexInfo">Twitter:</h4>{{queensShow.queen.twitter}}</li>
+    <li><h4 class="queensShowIndexInfo">Drag Name:</h4><p>{{queensShow.queen.drag_name}}</p></li>
+    <li><h4 class="queensShowIndexInfo">Also Know As:</h4><p>{{queensShow.queen.first_name}} {{queensShow.queen.last_name}}</p></li>
+    <li><h4 class="queensShowIndexInfo">Website:</h4><p>{{queensShow.queen.website}}</p></li>
+    <li><h4 class="queensShowIndexInfo">Instagram:</h4><p>{{queensShow.queen.instagram}}</p></li>
+    <li><h4 class="queensShowIndexInfo">Twitter:</h4><p>{{queensShow.queen.twitter}}</p></li>
     <br>
   </ul>
 </div>
 <div class="queenShowIndexBio">
-<li><h4 class="queensShowIndexBio">Bio:</h4>{{queensShow.queen.bio}}</li>
+<li><h4 class="queensShowIndexBio">Bio:</h4><p>{{queensShow.queen.bio}}</p></li>
 </div>
 
-<h2>Comments</h2>
-<form name="queensShow.commentForm" ng-submit="queensShow.createComment()">
-  <label for="body"></label>
-  <textarea name="body" rows="8" cols="80" ng-model="queensShow.comment.body"></textarea>
-  <br>
-  <input type="submit" name="" value="Add Comment">
-</form>
-<ul class="comments">
+<h2 class="commentsTitle">Comments</h2>
+<ul class="userComments">
   <li ng-repeat="comment in queensShow.queen.comments"> {{ comment.user_id.user_name }}
-    {{ comment.body }}
+    <p>"{{ comment.body }}"</p>
   </li>
 </ul>
+<br>
+<br>
+<br>
+<br>
+<div class="commentContainer">
+<form name="queensShow.commentForm" ng-submit="queensShow.createComment()">
+  <label for="body"></label>
+  <textarea class="commentArea" name="body" rows="5" cols="80" ng-model="queensShow.comment.body"></textarea>
+  <br>
+  <input class="commentButton" type="submit" name="" value="Add Comment">
+</form>
+</div>
