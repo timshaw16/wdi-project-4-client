@@ -11,7 +11,7 @@
   <h2 class="seasonShowQueenTitle">Queens</h2>
   <div class="seasonShowQueens">
     <li ng-repeat="queen in seasonsShow.season.queens track by $index">
-      <img class="queenShowImg" ng-src="{{queen.image}}"<a ui-sref="queensShow({ id: queen.id })"></a>
+      <a ui-sref="queensShow({ id: queen.id })"><img class="queenShowImg" ng-src="{{queen.image}}"></a>
     </li>
   </div>
 </ul>

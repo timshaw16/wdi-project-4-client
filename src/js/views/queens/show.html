@@ -19,5 +19,18 @@
   </ul>
 </div>
 <div class="queenShowIndexBio">
-<li><h4 class="queensShowIndexBio">Bio:</h4>{{queensShow.queen.bio}}
+<li><h4 class="queensShowIndexBio">Bio:</h4>{{queensShow.queen.bio}}</li>
 </div>
+
+<h2>Comments</h2>
+<form name="queensShow.commentForm" ng-submit="queensShow.createComment()">
+  <label for="body"></label>
+  <textarea name="body" rows="8" cols="80" ng-model="queensShow.comment.body"></textarea>
+  <br>
+  <input type="submit" name="" value="Add Comment">
+</form>
+<ul class="comments">
+  <li ng-repeat="comment in queensShow.queen.comments"> {{ comment.user_id.user_name }}
+    {{ comment.body }}
+  </li>
+</ul>

@@ -54,5 +54,12 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     controllerAs: 'queensShow'
   });
 
+  // .state('giphyIndex', {
+  //   url: '/giphy',
+  //   templateUrl: '/js/views/giphy/index.html',
+  //   controller: 'GiphyIndexCtrl',
+  //   controllerAs: 'giphyIndex'
+  // });
+
   $urlRouterProvider.otherwise('/');
 }
