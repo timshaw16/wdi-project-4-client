@@ -3,8 +3,8 @@
   border: 2px solid #ff3fd2;
   display: block;
   margin-right: 10px;
-  margin-left: 10px;
-  border-radius: 60px;
+  // margin-left: 10px;
+  // border-radius: 60px;
 }
 
 .containerSeasonImg {
@@ -18,10 +18,10 @@
   bottom: 0px;
   background-color: rgba(255, 63, 210, 0.9);
   overflow: hidden;
-  width: 100%;
+  width: 98%;
   height: 90px;
   transition: .5s ease;
-  border-radius: 60px;
+  // border-radius: 60px;
 }
 
 .containerSeasonImg:hover .overlay {
@@ -41,14 +41,24 @@
   -ms-transform: translate(-50%, -50%);
 }
 // ********* Search The Queens ***********
+
+.searchTheQueens {
+  margin-top: -69px;
+  background-color: #ff3fd2;
+  position: relative;
+  color: white;
+  border: 0px !important;
+  padding: 14px;
+  margin-bottom: 0px;
+}
 .indexQueenImg {
   border: 2px solid #ff3fd2;
   margin-top: 10px;
   max-width: 100%;
-  border-radius: 60px;
+  // border-radius: 60px;
 }
 
-.containerQueenImg {
+.containerQueenImg .desktopGrades .desktopGrades1 {
   position: relative;
   width: 50%;
 }
@@ -100,4 +110,37 @@ a {
 }
 .desktopGrades h1 {
   border: 1px solid #ccc;
+}
+
+
+//  ********** Title *****
+
+.dragQuotes {
+  margin-top: -69px;
+  background-color: #ff3fd2;
+  position: relative;
+  color: white;
+  border: 0px !important;
+  padding: 14px;
+  margin-bottom: 0px;
+}
+
+.dragVids {
+  margin-top: -69px;
+  background-color: #ff3fd2;
+  position: relative;
+  color: white;
+  border: 0px !important;
+  padding: 14px;
+  margin-bottom: 0px;
+}
+
+.dragGiphy {
+  margin-top: -69px;
+  background-color: #ff3fd2;
+  position: relative;
+  color: white;
+  border: 0px !important;
+  padding: 14px;
+  margin-bottom: 0px;
 }
