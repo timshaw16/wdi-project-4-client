@@ -1,9 +1,14 @@
 .seasonImg {
-  width: 100%;
-  border: 2px solid #ff3fd2;
-  border-radius: 115px;
+  width: 136%;
+  // border: 2px solid #ff3fd2;
   margin-bottom: 50px;
-  float: left;
+  margin-left: -231px;
+  margin-top: -50px;
+  // width: 100%;
+  // border: 2px solid #ff3fd2;
+  // border-radius: 115px;
+  // margin-bottom: 50px;
+  // float: left;
 }
 
 .seasonTitle {
@@ -18,4 +23,8 @@
 
 .seasonShowQueens {
   margin-left: 90px;
+}
+
+.blocker {
+  height: 50px;
 }
