@@ -1,5 +1,5 @@
 .container {
-  max-width: 1000px;
+  max-width: 959px;
   margin: 0 auto;
 }
 
@@ -9,12 +9,11 @@
   padding-top: 50px;
 
 }
-.crt-parallaxvideo video{
+.crt-parallaxvideo .video{
   min-width: 100%;
   position: fixed;
   top:0;
   z-index: -100;
-
 }
 .crt-parallaxvideo h1 {
   color: white;
@@ -24,23 +23,29 @@
   text-transform: uppercase;
   background-color: rgba(255, 63, 210, 0.9);
   padding: 10px;
+  padding-top: 20px;
   border-radius: 50px;
 }
 
 .plax.ccparallax-one {
   background-image: url("../images/index-page-season-img.jpg");
-  width: 1441px;
+  width: 1440px;
   margin-left: -255px;
 }
 .plax.ccparallax-two {
   background-image: url("../images/searchTheQueens.png");
   margin-left: -236px;
-  width: 1443px;
+  width: 1440px;
 }
 .plax.ccparallax-three {
   background-image: url("../images/paxallax3.jpg");
 }
 
+.plax.ccparallax-four {
+  background-image: url("../images/quotes.png");
+  margin-left: -236px;
+  width: 1440px;
+}
 
 .plax:last-child {
   margin-bottom: 0;
@@ -58,11 +63,12 @@
 
 .plax.content {
   background: none repeat scroll 0 0 #ff3fd2;
+  // background-image: url("../images/index-divders.png");
   padding: 42px 0;
   width: 155%;
   // border: 1px solid;
   margin-left: -256px;
-  height: 140px;
+  height: 85px;
 
 }
 .plax.ccparallax h1 {
@@ -73,26 +79,34 @@
   color: white;
   background-color: rgba(255, 63, 210, 0.9);
   padding: 10px;
+  padding-top: 20px;
   border-radius: 50px;
 }
 
-.plax .headlines h2 {
-  color: white;
-  font-family: "PT Sans",sans-serif;
-  font-size: 32px;
-  margin: 0;
-  text-align: center;
+
+a {
+  color: white !important;
+  text-decoration: none !important;
 }
-.plax .headlines p {
-  font-size: 16px;
-  font-weight: 300;
-  margin: 0;
-  color:red;
-  text-align: center;
-}
-.plax .contentarea, .plax .contentarea h2{
-  color:black;
-}
+
+
+// .plax .headlines h2 {
+//   color: white;
+//   font-family: "PT Sans",sans-serif;
+//   font-size: 32px;
+//   margin: 0;
+//   text-align: center;
+// }
+// .plax .headlines p {
+//   font-size: 16px;
+//   font-weight: 300;
+//   margin: 0;
+//   color:red;
+//   text-align: center;
+// }
+// .plax .contentarea, .plax .contentarea h2{
+//   color:black;
+// }
 
 
 
