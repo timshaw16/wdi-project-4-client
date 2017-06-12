@@ -7,7 +7,7 @@
 <li ng-repeat="queen in queensIndex.queens track by $index">
   <div class="queensIndexList">
     <ul>
-      <li><img class="queenIndexImg" ng-src="{{queen.image}}"></li>
+      <li><a ui-sref="queensShow({ id: queen.id })"><img class="queenShowImg" ng-src="{{queen.image}}"></a></li>
     </ul>
   </div>
 </li>
