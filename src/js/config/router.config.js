@@ -7,8 +7,12 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
   $locationProvider.html5Mode(true);
 
   $stateProvider
-  .state('home', {
+  .state('loginRegPage', {
     url: '/',
+    templateUrl: '/js/views/dragrace.html'
+  })
+  .state('home', {
+    url: '/home',
     templateUrl: '/js/views/home.html'
   })
   .state('register', {
