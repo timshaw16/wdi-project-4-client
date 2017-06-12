@@ -47,7 +47,8 @@
   width: 1440px;
 }
 .plax.ccparallax-three {
-  background-image: url("../images/index-page-season-img.jpg");
+  background-image: "{{ gify.images.fixed_height.url }}";
+  // background-image: url("../images/index-page-season-img.jpg");
   margin-left: -255px;
   width: 1440px;
 }
