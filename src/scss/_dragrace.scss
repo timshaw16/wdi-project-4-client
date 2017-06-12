@@ -9,16 +9,22 @@ video {
   z-index: -100;
 }
 
+.mainLogoIndex {
+  margin-left: 10%;
+}
+
 .overlayVid {
   background-color: rgba(255, 63, 210, 0.3);
   width: 155%;
-  height: 800px;
+  height: 100%;
   margin-left: -256px;
+  position: absolute;
 }
 
 .signUpLanding {
+  position: relative;
   text-align: center;
-  margin-top: -450px;
+  margin-top: 80px;
   font-size: 50px;
   font-family: 'Aviddyn';
 }
