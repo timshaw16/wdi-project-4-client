@@ -6,9 +6,20 @@ MainCtrl.$inject = ['$rootScope', 'CurrentUserService', '$state'];
 function MainCtrl($rootScope, CurrentUserService, $state) {
   const vm = this;
 
+  $rootScope.$on('$stateChangeSuccess',
+  function(event, toState, toParams, fromState, fromParams) {
+    $state.current = toState;
+
+    if($state.current.url === '/') {
+      vm.hideNavbar = true;
+    } else {
+      vm.hideNavbar = false;
+    }
+  }
+);
+
   $rootScope.$on('loggedIn', () => {
     vm.user = CurrentUserService.currentUser;
-console.log(vm.user);
   });
 
   $rootScope.$on('loggedOut', () => {

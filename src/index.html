@@ -11,14 +11,14 @@
   <!-- endinject -->
 </head>
 <body ng-controller="MainCtrl as main">
-  <header>
+  <header ng-hide="main.hideNavbar">
     <img class="navImage" src="images/nav-image.png">
     <img class="navRupaul" src="images/rupaul_nav_image.png">
     <img class="mainLogo" src="images/main-logo.png">
     <div class="navline"><h4 class="menuNav"></h4></div>
   </header>
   <main class="container" ui-view></main>
-  <footer>
+  <footer ng-hide="main.hideNavbar">
     <ul>
       <li> <img class="socialMediaBtn" src="images/facebook.png"></li>
       <li> <img class="socialMediaBtn" src="images/twitter.png"></li>

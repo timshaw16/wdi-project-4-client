@@ -4,6 +4,7 @@
 }
 
 .crt-parallaxvideo{
+  position: relative;
   height: 500px;
   padding-bottom: 50px;
   padding-top: 50px;
@@ -11,18 +12,23 @@
 
 }
 .crt-parallaxvideo video{
+  position: absolute;
+  width: 155%;
+  margin-top: -141px;
+  margin-left: -255px;
+  // height: 100%;
   // min-width: 100%;
   // position: fixed;
   // top:0;
   // z-index: -100;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
+  // position: fixed;
+  // top: 0%;
+  // left: 0%;
+  // min-width: 100%;
+  // min-height: 100%;
+  // width: auto;
+  // height: auto;
+  // z-index: -100;
 }
 .crt-parallaxvideo h1 {
   color: white;
@@ -74,13 +80,12 @@
 }
 
 .plax.content {
-  background: none repeat scroll 0 0 #ff3fd2;
-  // background-image: url("../images/index-divders.png");
+  // background: none repeat scroll 0 0 #ff3fd2;
+  background-image: url("../images/divider100.png");
   padding: 42px 0;
-  width: 155%;
-  // border: 1px solid;
+  width: 156%;
   margin-left: -256px;
-  height: 85px;
+  height: 90px;
 
 }
 .plax.ccparallax h1 {
