@@ -53,7 +53,7 @@
   width: 1440px;
 }
 .plax.ccparallax-three {
-  background-image: "{{ gify.images.fixed_height.url }}";
+  background-image: url("../images/giphy.gif");
   // background-image: url("../images/index-page-season-img.jpg");
   margin-left: -255px;
   width: 1440px;
@@ -80,8 +80,8 @@
 }
 
 .plax.content {
-  // background: none repeat scroll 0 0 #ff3fd2;
-  background-image: url("../images/divider100.png");
+  background: none repeat scroll 0 0 #ff3fd2;
+  // background-image: url("../images/divider100.png");
   padding: 42px 0;
   width: 156%;
   margin-left: -256px;
