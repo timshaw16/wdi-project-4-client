@@ -1,4 +1,4 @@
-#Rupauls Drag Race#
+#Rupauls Drag Race
 
 ![screen shot 2017-06-28 at 14 24 01](https://user-images.githubusercontent.com/25135796/27639912-a4cc28f8-5c0f-11e7-9f13-7cbd079ee92c.png)
 
