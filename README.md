@@ -1,64 +1,46 @@
-### Using this Angular Gulp Setup
+#Rupauls Drag Race#
 
-To get setup with the starter-code, you first need to run:
+![screen shot 2017-06-28 at 14 24 01](https://user-images.githubusercontent.com/25135796/27639912-a4cc28f8-5c0f-11e7-9f13-7cbd079ee92c.png)
 
-```sh
-$ bower install && gulp install
-```
+##What is Rupauls Drag Race?
 
-## How is gulp setup?
+Rupauls Drag Race is like America's next top model but for Drag Queens.
 
-Rather than trying to manage one giant `gulpfile.js` that is file responsible for creating multiple tasks, each task has been broken out into its own file and placed in a directory `tasks`. Any files in that directory get automatically required in the gulpfile using the `require-dir` npm package.
+The website showcases the seasons (from Season 5 to the current season(9)) and the queens that have taken park in those seasons.
 
-To add a new task, simply add a new task file that directory.
+##Biggest Wins
+The home page of the site is a parallax which took be about 4 hours to complete one sunny Sunday afternoon. This is probably my proudest accomplishment of this project.
 
-/tasks/default.js specifies the default set of tasks to run
-when you run `gulp`.
+![rupaul-front](https://user-images.githubusercontent.com/25135796/27640214-8499797c-5c10-11e7-8eb1-3a188dfb6b1d.png)
 
-Configuration options are stored in the `package.json` file.
+**Planning**
 
-When deploying, ensure that a `postinstall` script has been added to
-your package.json, e.g.
+Again for this project I used Trello to help me with the planning of this app.
 
-```json
-"postinstall": "bower install && gulp deploy"
-```
+![screen shot 2017-06-28 at 14 48 07](https://user-images.githubusercontent.com/25135796/27640289-c3078406-5c10-11e7-81d3-d3b27c774ee4.png)
 
-This setup expects that there is a bower.json file with at least ONE package
-installed. This will created a bower_components directory after
-the postinstall script has run.
+**Wireframing**
 
-When deploying, this setup expects that the NODE_ENV is set to `production`.
-Also that the NPM_CONFIG_PRODUCTION is set to `false`. Then you can also set the API_URL to be the correct URL for your deployed app. This will automatically replace `http://localhost:4000` to be the correct url.
+I used JustInMind as my wireframe tool which I prefer over Balsamiq due to vast amount of tools it allows you to use.
 
-You can do this by running:
+![screen shot 2017-06-28 at 14 50 07](https://user-images.githubusercontent.com/25135796/27640367-07a97ff6-5c11-11e7-8298-23225f60bb5e.png)
 
-```bash
-$ heroku config:set NODE_ENV=production
-$ heroku config:set NPM_CONFIG_PRODUCTION=false
+##Future Additions
 
-# An example url
-$ heroku config:set API_URL=https://project-on-heroku.herokuapp.com/
-```
+I would like to add a few addtional features
+-User profile
+-Add burger Menu
+-Complete breadcumbs
 
-### Bower overrides
+##Additional Photos
+**Seasons Page**
+![screen shot 2017-06-28 at 14 37 50](https://user-images.githubusercontent.com/25135796/27640734-f708c5fc-5c11-11e7-9cbd-fff5bf52c383.png)
 
-Sometimes, you might want to `override` the `main` file(s) for a specific Bower component. You can do this directly inside the `bower.json` file like this:
+**Seasons Information Page**
+![screen shot 2017-06-28 at 14 38 38](https://user-images.githubusercontent.com/25135796/27640778-0c185598-5c12-11e7-928b-1667e7fde429.png)
 
-```json
-"overrides": {
-  "bootstrap": {
-    "main": [
-      "dist/css/bootstrap.css",
-      "dist/js/bootstrap.js",
-      "dist/fonts/*"
-    ]
-  },
-  "font-awesome": {
-    "main": [
-      "css/font-awesome.css",
-      "fonts/*"
-    ]
-  }
-},
-```
+**Queens Page**
+![screen shot 2017-06-28 at 14 39 09](https://user-images.githubusercontent.com/25135796/27640820-24ec59ca-5c12-11e7-8cd9-cfc237b80350.png)
+
+**Queens Information Page**
+![screen shot 2017-06-28 at 14 38 48](https://user-images.githubusercontent.com/25135796/27640854-32854560-5c12-11e7-9885-f727547c2638.png)
